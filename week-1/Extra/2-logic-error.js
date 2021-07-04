@@ -3,14 +3,16 @@
 function trimWord(word) {
   return wordtrim();
 }
+var word = "  CodeYourFuture 
+console.log()
 
 function getWordLength(word) {
   return "word".length()
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
+
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -23,7 +25,7 @@ const util = require('util');
 
 function test(test_name, actual, expected) {
     let status;
-    if (actual === expected) {
+    if (actual == expected) {
         status = "PASSED";
     } else {
         status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
@@ -34,4 +36,5 @@ function test(test_name, actual, expected) {
 
 test("fixed trimWord function", trimWord("  CodeYourFuture "), "CodeYourFuture");
 test("fixed wordLength function", getWordLength("A wild sentence appeared!"), 25);
-test("fixed multiply function", multiply(2, 3, 6), 36);
+test("fixed multiply function", multiply(2, 3, 6), 36);ls
+
