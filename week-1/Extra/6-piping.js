@@ -16,16 +16,19 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(a, b) {
+   return a + b;
 }
 
-function multiply() {
-
+function multiply(a, b) {
+    return a * b;
 }
 
-function format() {
-
+function format(price) {
+    const formatter = new Intl.NumberFormat('en-UK', {
+        style: 'currency',
+        cuttency: 'pound',
+    });
 }
 
 const startingValue = 2

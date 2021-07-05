@@ -4,6 +4,7 @@ function getAgeInMonths(age) {
 
 function createGreeting(name, age) {
     const ageInMonths = getAgeInMonths(age);
+    
     const message = "Hello world" + " " + name + " " + "was born over" + " " + ageInMonths + " " + "months ago !";
     return message; 
 }
