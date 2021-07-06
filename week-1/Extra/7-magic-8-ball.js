@@ -45,8 +45,32 @@ Very doubtful.
 
 // This should log "The ball has shaken!"
 // and return the answer.
+var answers = ["It is certain", 
+               "It is decidedly so", 
+               "Without a doubt",
+               "Yes - definitely", 
+               "You may rely on it", 
+               "As I see it, yes", 
+               "Most likely",
+               "Outlook good", 
+               "Yes", 
+               "Signs point to yes", 
+               "Reply hazy", 
+               "try again",
+               "Ask again later",
+               "Better not tell you now",
+               "Cannot predict now",
+               "Concentrate and ask again",
+               "Don't count on it",
+               "My reply is no",
+               "My sources say no",
+               "Outlook not so good",
+               "Very doubtful"];
 function shakeBall() {
-}
+  var answer = answers[Math.floor(Math.random() * answers.length)];
+  return answer;
+ }
+
 
 // This function should say whether the answer it is given is
 // - very positive
@@ -54,7 +78,9 @@ function shakeBall() {
 // - negative
 // - very negative
 // This function should expect to be called with any value which was returned by the shakeBall function.
-function checkAnswer(answer) {
+var results = ['Very Positive', 'Positive', 'Negative', 'Very Negative'];
+function checkAnswer(results) {
+     return Math.floor(Math.random() * Math.floor(results.length));
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

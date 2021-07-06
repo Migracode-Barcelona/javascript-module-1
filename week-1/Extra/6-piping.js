@@ -20,25 +20,34 @@ function add(a, b) {
    return a + b;
 }
 
-function multiply(a, b) {
-    return a * b;
+function multiply(x, y) {
+    return x * y;
 }
 
-function format(price) {
-    const formatter = new Intl.NumberFormat('en-UK', {
-        style: 'currency',
-        cuttency: 'pound',
-    });
-}
+function format(number) {
+    return "£" + number;
+} 
 
-const startingValue = 2
+
+
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = 
+
+const startingValue = 2
+function formatter(){ 
+    var badCode = (startingValue + 10) * 2;  return format(badCode); 
+}
+formatter();
+ 
 
 /* BETTER PRACTICE */
 
-let goodCode = 
+function newFormat(){
+    var goodCode = (startingValue + 10) * 2;
+    return format(goodCode); 
+}
+newFormat();
+
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

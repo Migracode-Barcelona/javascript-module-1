@@ -10,14 +10,13 @@ console.log(trimWord("  CodeYourFuture "));
 function getWordLength(word) {
   return word.length;
 }
-console.log(getWordLength("A wild sentence appeared!"));
 
 //==================================================//
 
 function multiply(a, b, c) {
   return a * b * c;
 }
-console.log( multiply(2, 3, 6));
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 There are some Tests in this file that will help you work out if your code is working.

@@ -3,12 +3,11 @@
 function addNumbers(a, b, c) {
     return a + b + c;
 }
-console.log(addNumbers(3, 4, 6));
 
 //========================//
 
 function introduceMe(firstName, age) {
-    return "Hello, my name is " + firstName + " and I am " + age + " years old.";
+    return "Hello, my name is " + firstName + " and I am " + age + " years old";
 }
 console.log(introduceMe("Sonjide", 27));
 
