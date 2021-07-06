@@ -30,23 +30,22 @@ function format(number) {
 
 
 
-
 // Why can this code be seen as bad practice? Comment your answer.
 
 const startingValue = 2
-function formatter(){ 
-    var badCode = (startingValue + 10) * 2;  return format(badCode); 
-}
-formatter();
+
+    let badCode = format(multiply( add(startingValue,10),2));  
+
  
 
 /* BETTER PRACTICE */
 
-function newFormat(){
-    var goodCode = (startingValue + 10) * 2;
-    return format(goodCode); 
-}
-newFormat();
+
+    const result1 = add(startingValue, 10);
+    const result2 = multiply(result1, 2);
+    const result3 = format(result2);
+    let goodCode = result3;
+ 
 
 
 /* ======= TESTS - DO NOT MODIFY ===== 
