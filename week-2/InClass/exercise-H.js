@@ -3,14 +3,22 @@ function exponential(number) {
 }
 
 function isEven(number) {
-  for(let i = 5; i <= number; i++) {
-    if (i % 2 == 0) {
-      let exponentialNumber = exponential(i);
-      console.log("The exponential of " + i + "is " + exponentialNumber);
-    }
-  }
+  return number % 2 === 0;
 }
-// not completed
+  for(let number = 5; number < 20; number++) {
+    if (isEven(number)) {
+      let result = exponential(number);
+      console.log("The exponential of " + number + "is " + result);
+    }
+}
+//  let number = 5;
+//  while (number < 20) {
+//    if(isEven(number)){
+//      result = exponential(number);
+//      console.log("The exponentila of " + number + " is " + result);
+//    }
+//  }
+
 
 
 
