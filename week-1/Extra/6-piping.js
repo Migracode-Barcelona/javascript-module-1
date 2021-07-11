@@ -35,6 +35,7 @@ function format(number) {
 const startingValue = 2
 
     let badCode = format(multiply( add(startingValue,10),2));  
+    // This is code is bad practice because all the functions are on line line wwhich gives the result but doesen't looks good.
 
  
 
