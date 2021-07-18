@@ -7,7 +7,8 @@
   NOTE: only the names should be returned, not the means of transport.
 */
 
-function journeyPlanner() {
+function journeyPlanner(arrayOfLocations, transportations) {
+  return arrayOfLocations.filter(location => location.includes(transportations)).map((location) => location[0]);
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
