@@ -7,9 +7,15 @@
 */
 
 let n = 10;
+let nums=[1,2,3,4,5,6,7,8,9,10]
 
 function sumTillNum(num){
+	let sum=0;
+	for( var i=0; i<nums.length; i++){
+		sum=sum+num[i];
+		return sum
+	}
 	//your code here
 }
 
-console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
+console.log("Sum from 0 to " + n + " is: " + sumTillNum(nums));

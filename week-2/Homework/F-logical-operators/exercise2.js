@@ -5,7 +5,16 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative() {
+  if(-10<0?true:false);
+  if(5<0?true:false);
+  if(10<=10&&10>5?true:false);
+
+}
+   
+  
+  
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
