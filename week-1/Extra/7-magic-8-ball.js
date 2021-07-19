@@ -45,8 +45,37 @@ Very doubtful.
 
 // This should log "The ball has shaken!"
 // and return the answer.
+const veryPositiveAnswers = ["It is certain", 
+                             "It is decidedly so.", 
+                             "Without a doubt",
+                             "Yes - definitely",
+                             "You may rely on it"];
+const positiveAnswers = ["As I see it, yes", 
+                        "Most likely",
+                        "Outlook good", 
+                        "Yes", 
+                        "Signs point to yes"];
+const negativeAnswers = ["Reply hazy", 
+                         "try again",
+                         "Ask again later",
+                         "Better not tell you now",
+                         "Cannot predict now"];
+const veryNegativeAnswers = ["Concentrate and ask again",
+                             "Don't count on it",
+                             "My reply is no",
+                             "My sources say no",
+                             "Outlook not so good",
+                             "Very doubtful"];
+
+const answers = veryPositiveAnswers.concat(positiveAnswers, negativeAnswers, veryNegativeAnswers);
+
 function shakeBall() {
-}
+  console.log("The ball has shaken!");
+  const answer = answers[Math.floor(Math.random() * answers.length)];
+  return answer;
+ }
+ shakeBall();
+
 
 // This function should say whether the answer it is given is
 // - very positive
@@ -54,8 +83,20 @@ function shakeBall() {
 // - negative
 // - very negative
 // This function should expect to be called with any value which was returned by the shakeBall function.
+
 function checkAnswer(answer) {
+  if (veryPositiveAnswers.indexOf(answer) > -1) {
+      return "very positive";
+  } else if (positiveAnswers.indexOf(answer) > -1) {
+      return "positive";
+  } else if (negativeAnswers.indexOf(answer) > -1) {
+      return "negative";
+  } else {
+      return "very negative";
+  }
 }
+
+
 
 /* ======= TESTS - DO NOT MODIFY =====
 There are some Tests in this file that will help you work out if your code is working.

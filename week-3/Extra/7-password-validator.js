@@ -23,7 +23,22 @@ PasswordValidationResult=  [false, false, false, false, true]
 */
 
 function validatePasswords(passwords) {
-
+const isLongerThan5 = (password) => password.length >= 5;
+const existsUpperCase = (passwordArray) => passwordArray.some((char) => char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90); 
+const existsLoweCase = (passwordArray) => passwordArray.some((char) => char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122);
+const leastOneNumber = (passwordArray) => passwordArray.some((char) => char.charCodeAt(0) >= 48 && char.charCodeAt(0) <= 57);
+const nonAlphanumericSymbol = (passwordArray) => passwordArray.some((char) => char.charCodeAt(0) === 33 || 
+                                                                              char.charCodeAt(0) === 35 ||
+                                                                              char.charCodeAt(0) === 36 ||
+                                                                              char.charCodeAt(0) === 37 ||
+                                                                              char.charCodeAt(0) === 46 ||
+                                                                              char.charCodeAt(0) === 42 ||
+                                                                              char.charCodeAt(0) === 38 
+);
+return passwords.map((password) => {
+  const splittedPassword = password.split("");
+  return isLongerThan5(password) && existsUpperCase(splittedPassword) && existsLoweCase(splittedPassword) && leastOneNumber(splittedPassword) && nonAlphanumericSymbol(splittedPassword);
+});
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -53,5 +68,5 @@ test(
 test(
   "validatePasswords function works - case 2",
   validatePasswords(passwords2),
-  [true, true, false, false, false]
+  [true, true, false, false, true]
 );
