@@ -5,7 +5,18 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative() {
+  if(-10<0){
+    return true
+  };
+  if(5<0);
+  if(10<=10&&10>5);
+
+}
+   
+  
+  
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
