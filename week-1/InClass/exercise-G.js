@@ -4,10 +4,10 @@ const numberofMentors = 8;
 
 const totalNumberOfClass = numberOfStudents + numberofMentors;
 
-const percentageOfStudents = (100 *  numberOfStudents /totalNumberOfClass);
+const percentageOfStudents = (100 *  numberOfStudents) /totalNumberOfClass;
 
-const percentageOfMentors = (100 *  numberofMentors / totalNumberOfClass);
+const percentageOfMentors = (100 *  numberofMentors) / totalNumberOfClass;
 
-console.log(Math.round(percentageOfStudents));
+console.log("Percentage students: " + Math.round(percentageOfStudents) + "%");
 
-console.log(Math.round(percentageOfMentors));
+console.log("Percentage mentors: " + Math.round(percentageOfMentors) + "%");
