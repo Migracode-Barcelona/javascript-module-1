@@ -1,35 +1,24 @@
-var mentor1 = "Daniel";
-var mentor2 = "Irina";
-var mentor3 = "Mimi";
-var mentor4 = "Rob";
-var mentor5 = "Yohannes";
+const mentor1 = "Daniel";
+const mentor2 = "Irina";
+const mentor3 = "Mimi";
+const mentor4 = "Rob";
+const mentor5 = "Yohannes";
 
-function uperCaseName (mentor){
-    return `Hello ${mentor.toUpperCase()}`
+function mentors(mentor){
+    const nameInUpperCase = mentor.toUpperCase();
+    return nameInUpperCase;
+}
+// segunda parte del ejercicio:
+
+function shoutingOutLoud (mentor){
+    return `HELLO ${mentor.toUpperCase()}`
 }
 
-var greetings = uperCaseName();
-
- /*If I call thr function, it will prints:
-Hello DANIEL
- Hello IRINA
- Hello MIMI
- Hello ROB
- Hello YOHANNES */
-
- //Second function
-
-
-let shoutingOutLoud = greetings.toUpperCase();
-
-function uperCaseName (mentor){
-    return `Hello ${mentor1.toUpperCase()}
-Hello ${mentor2.toUpperCase()}
-Hello ${mentor3.toUpperCase()}
-Hello ${mentor4.toUpperCase()}
-Hello ${mentor5.toUpperCase()}`
-}
-console.log(shoutingOutLoud); 
+console.log(shoutingOutLoud(mentor1)); 
+console.log(shoutingOutLoud(mentor2)); 
+console.log(shoutingOutLoud(mentor3)); 
+console.log(shoutingOutLoud(mentor4)); 
+console.log(shoutingOutLoud(mentor5)); 
 
 /* prints: 
 HELLO DANIEL
