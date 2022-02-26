@@ -4,20 +4,38 @@ var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
-function uperCaseName (name){
-    return `Hello ${name.toUpperCase()}`
-}
-// function uperCaseGreetings
-
-function shouting(){
-    return greeting.toUpperCase() + uperCaseName;
+function uperCaseName (mentor){
+    return `Hello ${mentor.toUpperCase()}`
 }
 
-let greetings = uperCaseName("Daniel")
+var greetings = uperCaseName();
+
+ /*If I call thr function, it will prints:
+Hello DANIEL
+ Hello IRINA
+ Hello MIMI
+ Hello ROB
+ Hello YOHANNES */
+
+ //Second function
 
 
-console.log(greetings); // Prints Hi DANIEL
+let shoutingOutLoud = greetings.toUpperCase();
 
-console.log(shouting);
+function uperCaseName (mentor){
+    return `Hello ${mentor1.toUpperCase()}
+Hello ${mentor2.toUpperCase()}
+Hello ${mentor3.toUpperCase()}
+Hello ${mentor4.toUpperCase()}
+Hello ${mentor5.toUpperCase()}`
+}
+console.log(shoutingOutLoud); 
 
+/* prints: 
+HELLO DANIEL
+HELLO IRINA
+HELLO MIMI
+HELLO ROB
+HELLO YOHANNES
+*/
 
