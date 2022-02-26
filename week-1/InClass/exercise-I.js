@@ -1,3 +1,5 @@
+const year = 2022 // global variable
+
 function age(thisYears, yearsOld){
     return thisYears - yearsOld;
 }
