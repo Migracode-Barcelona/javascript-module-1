@@ -1,0 +1,11 @@
+console.log("Hello world");
+console.log("hola mundo");
+console.log("Zdravstvuyte");
+console.log("best");
+console.log("Bonjour");
+console.log("Nǐn hǎo");
+console.log("Salve");
+console.log("Konnichiwa");
+console.log("Guten Tag");
+console.log("Olá");
+console.log("Anyoung haseyo");
