@@ -1,18 +1,18 @@
 const year = 2022 // global variable
 
-function age(thisYears, yearsOld){
-    return thisYears - yearsOld;
+function returnBornDate(yearsOld){
+    return year - yearsOld;
 }
 
-const myBirthYear = age(2022, 34);
-console.log(myBirthYear); // prints 1988
+console.log(returnBornDate(34)); // prints 1988
 
-// Second part of the excercise:
+//Second part of the excercise:
 
-function greetings(name, year){
-    return message = ` Hello, my name is ${name} and I've born in ${year}.`
-};
+function greetings(name, age){
+    return ` Hello, my name is ${name} and I've born in ${returnBornDate(age)}.`
+// };
+}
 
-let greetingsFromBarcelona = greetings("Cristiane", myBirthYear);
+console.log(greetings("Cristiane", 34)); // prints: Hello, my name is Cristiane and I've born in 1988.
 
-console.log(greetingsFromBarcelona); // prints: Hello, my name is Cristiane and I've born in 1988.
+
