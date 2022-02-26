@@ -9,9 +9,15 @@ function uperCaseName (name){
 }
 // function uperCaseGreetings
 
+function shouting(){
+    return greeting.toUpperCase() + uperCaseName;
+}
 
 let greetings = uperCaseName("Daniel")
 
+
 console.log(greetings); // Prints Hi DANIEL
+
+console.log(shouting);
 
 
