@@ -10,8 +10,10 @@ console.log(randomNumbers)
 
 /*  What's the difference between a return and console.log?
     
-    - the return is a way to get the type of the paramethers, modify it for some specific value and also to execute some extra work in action of the function.
-    -   console.log - prints the result on the screen
+    -  A return statement ends the execution of a function, and returns control to the calling function. 
+    Execution resumes in the calling function at the point immediately following the call. 
+    A return statement can return a value to the calling function.
+    -  console.log - prints the result on the screen
 
     When would you choose to use functions over the way we have been scripting so far?
 
