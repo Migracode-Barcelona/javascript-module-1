@@ -41,6 +41,8 @@ Can you explain what this function does line by line?
               inserting as an argument what we need to know it matches with one of the conditions of the function.
 
               As a result checked on Node REPL, it prints
+
+              name isn't even a number :(
  
   
  
