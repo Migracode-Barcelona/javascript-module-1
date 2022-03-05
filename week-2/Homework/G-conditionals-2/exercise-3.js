@@ -9,7 +9,13 @@
 */
 
 function calculateGrade(mark) {
-
+if (mark < 50 ){
+  return "F"
+}else if ( mark <= 50 && mark <= 60){
+  return "C"
+} else if (mark > 60 && mark < 80){
+  return "B"
+}  return "A"
 }
 
 /* 
@@ -18,7 +24,7 @@ DO NOT EDIT BELOW THIS LINE
 var grade1 = 49;
 var grade2 = 90;
 var grade3 = 70;
-var grade4 = 55;
+var grade4 = 50;
 
 console.log("'" + grade1 + "': " + calculateGrade(grade1));
 console.log("'" + grade2 + "': " + calculateGrade(grade2));
