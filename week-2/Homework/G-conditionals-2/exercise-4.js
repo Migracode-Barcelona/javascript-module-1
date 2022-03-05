@@ -6,11 +6,14 @@
   - otherwise return false
 
   Hint: Google how to check if a string contains a word
+
+ podemos utilizar o methodo includes()
+
 */
 
 function containsCode(sentence) {
-
-}
+  return sentence.includes('code')
+} 
 
 /* 
 DO NOT EDIT BELOW THIS LINE
