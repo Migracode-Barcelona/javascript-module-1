@@ -8,6 +8,8 @@
 
 let n = 10;
 
+/*
+
 function sumTillNum(num){
 	//your code here
 	let suma = []
@@ -21,7 +23,7 @@ console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
 
 // prints: Sum from 0 to 10 is: 0+1+2+3+4+5+6+7+8+9+10
 
-
+*/
 
 function sumTillNum(num){
 	//your code here
