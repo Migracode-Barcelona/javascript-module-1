@@ -1,12 +1,4 @@
-// function exponential(number) {
-//   return number * number;
-// }
 
-// function isEven(number) {
-//   return number % 2 === 0;
-// }
-
-// 
 
 function exponential(number) {
   return number * number; // o number **2
@@ -15,11 +7,6 @@ function exponential(number) {
 function isEven(number) {
   return number % 2 === 0;
 }
-
-// for (let i = 5; i < 20; i++){
-//     console.log(`The exponential of ${isEven()} is ${exponential()}`)
-//     isEven = isEven + 2;
-// }
 
 for ( let number = 5; number < 20; number++ ) { // o 20 < number 
   if (isEven(number)){
