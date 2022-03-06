@@ -25,4 +25,12 @@ const daysOfWeek = [
   "Sunday",
 ];
 
-const result = getDaysStartingWithT(daysOfWeek)
+getDaysStartingWithT(daysOfWeek)
+
+ /* prints:
+
+ Tuesday
+Thursday
+
+
+*/
