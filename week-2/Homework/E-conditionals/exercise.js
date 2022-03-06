@@ -16,6 +16,9 @@ if(danielsRole === "mentor"){
 }
 
 /* 
+
+Prints:
+
 EXPECTED RESULT
 ---------------
 Hi, I'm Daniel, I'm a mentor.
