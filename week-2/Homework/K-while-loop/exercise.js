@@ -20,3 +20,6 @@ function sumTillNum(num){
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
+
+
+// Prints: Sum from 0 to 10 is: 55
