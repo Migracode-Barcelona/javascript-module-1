@@ -14,5 +14,6 @@ console.log(peopleOnMyTable);
 
 // prints :
 
+
 // [ 'Felix', 'Cristiane', 'Rosangela', 'Marina', 'SomeoneElse' ]
 
