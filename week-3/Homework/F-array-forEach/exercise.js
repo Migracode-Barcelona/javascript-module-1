@@ -9,6 +9,22 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
+function ismultiple(value, mult){
+  let resp = value % mult;
+  if(resp === 0) return true;
+  else return false
+}
+
+function multiple (){
+  let min = 0;
+  for(let i =15; i >min; i--){
+    console.log(i);
+  }
+}
+
+console.log(ismultiple(9,3))
+
+
 /* EXPECTED OUTPUT */
 
 /*
