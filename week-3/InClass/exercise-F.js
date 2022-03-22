@@ -27,7 +27,6 @@ const dLicense = birthYears.map(function (birthYear){
     });
 
 
-
 //PRINTS:
 
 /*
