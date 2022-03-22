@@ -5,9 +5,7 @@
 // Upper cases all letters in the array
 
 function magician(yourFunc) {
-  console.log(
-    "I am magician! Watch as I mutate an array of strings to your heart's content!"
-  );
+  console.log("I am magician! Watch as I mutate an array of strings to your heart's content!");
   const namesArray = [
     "James",
     "Elamin",
@@ -49,4 +47,4 @@ console.log(magician(manipulateArray))
 
 
 
-///Calback Function:
+
