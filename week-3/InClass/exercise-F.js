@@ -15,58 +15,29 @@ console.log the answers
 
 const birthYears = [1964, 2008, 1999, 2005, 1978, 1985, 1919];
 
-// const ages = birthYears.map(function (birthYear){
-//     const year = 2022;
-//     const yearsOld = year - birthYear;
-//     return yearsOld
 
-// })
-
-// solucion 1 cris:
-
-// const dLicense = birthYears.map(function (driver){
-//     const year = 2022;
-//     const yearsOld = year - driver;
-//     const legalDriver = yearsOld >= 17;
-//     const waitingPermition = yearsOld < 17;
-//     const yearsWaiting = 17 - yearsOld;
-//     if (driver === legalDriver){
-//         console.log( `Born in ${birthYears.length()} can drive`)
-//     } else ( driver === waitingPermition)
-//         console.log(`Born in ${birthYears} can drive in ${yearsWaiting} years`)
-//     });
-
-
-
-// Prints:
-
-/*
-Born in 1964,2008,1999,2005,1978,1985,1919 can drive in -41 years
-Born in 1964,2008,1999,2005,1978,1985,1919 can drive in 3 years
-Born in 1964,2008,1999,2005,1978,1985,1919 can drive in -6 years
-Born in 1964,2008,1999,2005,1978,1985,1919 can drive in 0 years
-Born in 1964,2008,1999,2005,1978,1985,1919 can drive in -27 years
-Born in 1964,2008,1999,2005,1978,1985,1919 can drive in -20 years
-Born in 1964,2008,1999,2005,1978,1985,1919 can drive in -86 years
-
-*/
-
-
-const dLicense = birthYears.map(function (driver){
-    const year = 2022;
-    const yearsOld = year - driver;
-    const legalDriver = yearsOld >= 17;
-    const waitingPermition = yearsOld < 17;
-    const yearsWaiting = 17 - yearsOld;
-    if ( driver == waitingPermition){
-         console.log(`Born in ${birthYears.length} can drive in ${yearsWaiting} years`)
-    } else (driver == legalDriver) 
-        console.log( `Born in ${birthYears.length} can drive`)
-       
+const dLicense = birthYears.map(function (birthYear){
+    const year = 2022; // number
+    const yearsOld = year - birthYear; // number
+    const yearsWaiting = 17 - yearsOld; // number
+     if ( yearsOld < 17){
+         console.log(`Born in ${birthYear} can drive in ${yearsWaiting} years`)
+    } else if( yearsOld >= 17) 
+        console.log( `Born in ${birthYear} can drive`)
     });
 
 
-  
-// PEDI AYUDA AL PROFESOR ALEJANDRO
 
+//PRINTS:
 
+/*
+
+Born in 1964 can drive
+Born in 2008 can drive in 3 years
+Born in 1999 can drive
+Born in 2005 can drive
+Born in 1978 can drive
+Born in 1985 can drive
+Born in 1919 can drive
+
+*/
