@@ -40,3 +40,7 @@ var pairs = pairsByIndex.map(function (indexes) {
 });
 
 console.log(pairs);
+
+// Prints:
+
+//[ [ 'Islam', 'Luke' ], [ 'Lesley', 'Mozafar' ], [ 'Harun', 'Irina' ] ]
