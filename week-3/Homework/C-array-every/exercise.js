@@ -9,7 +9,7 @@ function isStudent(name){
   return students.includes(name)
 }
 
-var groupIsOnlyStudents = group.every(isStudent)// complete this statement
+var groupIsOnlyStudents = group.every(isStudent)
 
 if (groupIsOnlyStudents) {
   console.log("The group contains only students");
