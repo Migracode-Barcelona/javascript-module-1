@@ -8,33 +8,47 @@ If it is, return Found me!; if not, return Haven't found me :(
 
 */
 
-const nameList = ["Cristiane", "Joana", "Carmem" , "Maria", "Ana", "Jessica"];
+const nameList = ["Cristiane", "Joana", "Carmem" , "Maria", "Ana"];
 
 
-const findingCris = function (people){
-    if (people === "Cristiane")
+  function findingPeople(person){
+    if (person === "Cristiane") // boolean
     return "Found me!"
     else 
     return "Haven't found me"
 
 }
 
-console.log(findingCris("Cristiane"))
+
+console.log(findingPeople("Cristiane"))
 
 
-//Prints:
-//Found me!
+/* All the other tries I got stuck:
+
+
+function findingPeople(person){
+    if (person == nameList ){
+    return "Found Me!"
+    }
+    else return "Haven't found me"
+}
+
+const findingCris = nameList.find(findingPeople)
+
+console.log(findingPeople("Cristiane"))
 
 
 
-// completar com  o find 
 
-// function findingCris(person) {
-//     if (person === nameList.find(person)){
-//         return "Found me!"
-//     } else {
-//         return "Haven't found me"
-//     }
-// }
+function findingPeople(person) {
+    if (person == nameList.find("Cristiane")){
+        return "Found me!"
+    } else {
+        return "Haven't found me"
+    }
+}
 
-// console.log(findingCris("Cristiane"));
+console.log(findingPeople("Cristiane"));
+
+
+*/
