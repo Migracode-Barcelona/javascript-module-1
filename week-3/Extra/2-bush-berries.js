@@ -10,9 +10,18 @@
   Use the tests to confirm which message to return
 */
 
-function bushChecker() {
-
+function bushChecker(_array) {
+  if (typeof _array == 'string'.length === 4 && _array.startsWith('p'))
+  return true
+  else false
 }
+
+/* Prints:  working on it
+
+bushChecker funtion works - case 1: FAILED: expected: 'Toxic! Leave bush alone!' but your function returned: undefined
+bushChecker funtion works - case 1: FAILED: expected: 'Bush is safe to eat from' but your function returned: undefined
+
+*/
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
