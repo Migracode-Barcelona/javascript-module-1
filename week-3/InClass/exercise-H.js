@@ -10,45 +10,24 @@ If it is, return Found me!; if not, return Haven't found me :(
 
 const nameList = ["Cristiane", "Joana", "Carmem" , "Maria", "Ana"];
 
+// I did in two ways, this first one I was not happy about it:
 
-  function findingPeople(person){
-    if (person === "Cristiane") // boolean
-    return "Found me!"
-    else 
+//   function findingPeople(person){
+//     if (person === "Cristiane") // boolean
+//     return "Found me!"
+//     else 
+//     return "Haven't found me"
+// }
+// console.log(findingPeople("Cristiane"))
+
+// I Kept practicing, and I found this new way a little bit easier now, and I can use properly an array method ( better than put my name dirrectly at the function):
+
+const findingPeople = (person) => {
+    if (nameList.includes(person)){
+         return "Found me!"
+    } else 
     return "Haven't found me"
-
 }
 
+console.log(findingPeople("Cristiane")) // prints: Found me!
 
-console.log(findingPeople("Cristiane"))
-
-
-/* All the other tries I got stuck:
-
-
-function findingPeople(person){
-    if (person == nameList ){
-    return "Found Me!"
-    }
-    else return "Haven't found me"
-}
-
-const findingCris = nameList.find(findingPeople)
-
-console.log(findingPeople("Cristiane"))
-
-
-
-
-function findingPeople(person) {
-    if (person == nameList.find("Cristiane")){
-        return "Found me!"
-    } else {
-        return "Haven't found me"
-    }
-}
-
-console.log(findingPeople("Cristiane"));
-
-
-*/
