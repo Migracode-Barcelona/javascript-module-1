@@ -25,4 +25,4 @@ var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
 console.log(longNameThatStartsWithA);
 
 /* EXPECTED OUTPUT */
-// "Alexandra"
+// "Alexandra" 
