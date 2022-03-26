@@ -19,7 +19,7 @@ console.log(isInUK("Republic of Ireland"));
 console.log(isInUK("England"));
 
 /* 
-  EXPECTED RESULT
+  EXPECTED RESULT // printed:
   ---------------
   false
   false
