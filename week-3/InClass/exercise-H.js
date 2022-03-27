@@ -12,8 +12,8 @@ const nameList = ["Cristiane", "Joana", "Carmem" , "Maria", "Ana"];
 
 // I did in two ways, this first one I was not happy about it:
 
-//   function findingPeople(person){
-//     if (person === "Cristiane") // boolean
+//   function findingPeople(nameList){
+//     if (nameList === "Cristiane") // boolean
 //     return "Found me!"
 //     else 
 //     return "Haven't found me"
@@ -22,8 +22,8 @@ const nameList = ["Cristiane", "Joana", "Carmem" , "Maria", "Ana"];
 
 // I Kept practicing, and I found this new way a little bit easier now, and I can use properly an array method ( better than put my name dirrectly at the function):
 
-const findingPeople = (person) => {
-    if (nameList.includes(person)){
+const findingPeople = (nameList) => {
+    if (nameList.includes(nameList)){
          return "Found me!"
     } else 
     return "Haven't found me"
