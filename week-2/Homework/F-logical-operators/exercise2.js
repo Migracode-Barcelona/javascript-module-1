@@ -5,7 +5,27 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(number) {
+  return number < 0
+}
+function isBetween5and10(number){
+  return number >= 5 && number <=10
+}
+
+//nombre corto es hasta 6 caracteres?
+
+function isShortName(person){
+  let nameLength = person.length;
+  return nameLength <= 6
+}
+
+function startsWithD(personName){
+  let firstCharacter = personName[0]
+  return firstCharacter === "D"
+
+}
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE

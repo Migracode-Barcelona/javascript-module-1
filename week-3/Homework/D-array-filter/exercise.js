@@ -6,17 +6,41 @@
   - Do not edit any of the existing code
 */
 
-var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
+var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, 'whoops'];
 
-var pairsByIndex; // Complete this statement
+// Solution 1:
 
-var students = ["Islam", "Lesley", "Harun", "Rukmini"];
-var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
+/*
+var pairsByIndex = pairsByIndexRaw.filter(function (element) {
+  if (Array.isArray(element) && element.length === 2) {
+    return true;
+  }
+  return false;
 
-var pairs = pairsByIndex.map(function(indexes) {
+});
+*/
+
+// Solution 2:
+
+// var pairsByIndex = pairsByIndexRaw.filter(element => Array.isArray(element) && element.length === 2);
+
+// Solution 3:
+
+let filterFunction = element => Array.isArray(element) && element.length === 2;
+var pairsByIndex = pairsByIndexRaw.filter(filterFunction)
+
+
+var students = ['Islam', 'Lesley', 'Harun', 'Rukmini'];
+var mentors = ['Daniel', 'Irina', 'Mozafar', 'Luke'];
+
+var pairs = pairsByIndex.map(function (indexes) {
   var student = students[indexes[0]];
   var mentor = mentors[indexes[1]];
   return [student, mentor];
 });
 
 console.log(pairs);
+
+// Prints:
+
+//[ [ 'Islam', 'Luke' ], [ 'Lesley', 'Mozafar' ], [ 'Harun', 'Irina' ] ]

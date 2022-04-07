@@ -4,7 +4,7 @@
 */
 
 var numbers = [3, 2, 1];
-var sortedNumbers; // complete this statement
+var sortedNumbers = numbers.sort(); 
 
 /* 
   DO NOT EDIT BELOW THIS LINE
@@ -17,3 +17,8 @@ console.log(sortedNumbers);
   ---------------
   [1, 2, 3]
 */
+
+
+// Prints:
+
+ [1, 2, 3]

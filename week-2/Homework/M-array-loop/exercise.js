@@ -4,6 +4,17 @@
 */
 
 
+function getDaysStartingWithT(array){
+  
+  for (let i=0; i < array.length; i++){
+    const day = array[i];
+    if (day.startsWith('T')){
+     console.log(day)
+    }
+  }
+
+}
+
 const daysOfWeek = [
   "Monday",
   "Tuesday",
@@ -13,3 +24,13 @@ const daysOfWeek = [
   "Saturday",
   "Sunday",
 ];
+
+getDaysStartingWithT(daysOfWeek)
+
+ /* prints:
+
+ Tuesday
+Thursday
+
+
+*/
