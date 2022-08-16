@@ -15,7 +15,7 @@ function upperCase(name) {
 
 function greeting(mentor){
     let mentorUpper = upperCase(mentor);
-    console.log(`HELLO ${mentorUpper}`)
+    console.log(`HELLO ${mentorUpper}`);
     // return `HELLO ${mentorUpper}`
 }
 
