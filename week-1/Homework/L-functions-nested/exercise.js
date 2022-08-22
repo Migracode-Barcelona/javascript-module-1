@@ -4,8 +4,8 @@ var mentor3 = "Fred";
 var mentor4 = "Ananda";
 var mentor5 = "Ali";
 
-function upperCase(name) {
-    return name.toUpperCase();
+function upperCase(mentor) {
+    return mentor.toUpperCase();
     
 }
 
@@ -13,11 +13,18 @@ function upperCase(name) {
 // console.log(mentorUpper);
 
 
+// function greeting(mentor){
+//     let mentorUpper = upperCase(mentor);
+//     console.log(`HELLO ${mentorUpper}`);
+//     // return `HELLO ${mentorUpper}`
+// }
+
+// best way""
+
 function greeting(mentor){
-    let mentorUpper = upperCase(mentor);
-    console.log(`HELLO ${mentorUpper}`);
-    // return `HELLO ${mentorUpper}`
+    console.log(`HELLO ${upperCase(mentor)}`);
 }
+
 
 // let hello = greeting(mentor1)
 // console.log(hello);
