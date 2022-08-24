@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    let inputUser = prompt("say something: ")
+
+    function iAmHappy(status) {
+        if (status == "happy") {
+            return "Good job, you're doing great!"
+        } else if (status == "sad") {
+            return "Every cloud has a silver lining"
+        } else if (typeof status == "number") {
+            return "Beep beep boop"
+        } else {
+            return "I'm sorry, I'm still learning about feelings!"
+        }
+    }
+
+    console.log(iAmHappy(inputUser));
+    console.log(iAmHappy("amanda"));
+    console.log(iAmHappy(4));
+    console.log(iAmHappy("sad"));
+</script>
+</body>
+</html>
