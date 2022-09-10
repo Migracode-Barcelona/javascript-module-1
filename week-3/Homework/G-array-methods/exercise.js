@@ -4,7 +4,7 @@
 */
 
 var numbers = [3, 2, 1];
-var sortedNumbers; // complete this statement
+const sortedNumbers = numbers.sort(); 
 
 /* 
   DO NOT EDIT BELOW THIS LINE
