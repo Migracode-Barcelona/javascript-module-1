@@ -13,3 +13,12 @@ const daysOfWeek = [
   "Saturday",
   "Sunday",
 ];
+
+// a = daysOfWeek.filter(e => e[0] == 'T')
+// console.log(a)
+
+for (let i = 0; i < daysOfWeek.length; i++) {
+  if (daysOfWeek[i][0] == 'T'){
+    console.log(daysOfWeek[i])
+  }
+}

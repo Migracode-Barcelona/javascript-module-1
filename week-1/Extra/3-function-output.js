@@ -2,15 +2,19 @@
 function getNumber() {
   return Math.random() * 10;
 }
+// Math.random returns a random number between 0 (inclusive),  and 1 (exclusive). But, in this case, this number will be multiplied by 10. Then this function will return a number between 0 and 10(exclusive). 
+
 
 // Add comments to explain what this function does. You're meant to use Google!
 function s(w1, w2) {
   return w1.concat(w2);
 }
+// return new element with w1 and w2 concatenated.
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(` `,secondWord,  ` `,thirdWord);
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
